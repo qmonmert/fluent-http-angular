@@ -1,0 +1,17 @@
+---
+layout: default
+title: Test
+ng-app: moduleTest
+---
+
+[[webjar 'bootstrap.min.css']]
+[[css 'style']]
+
+<div class="container" ng-controller="ModuleTestController as test">
+    <div class="jumbotron">
+        <h1 ng-cloak>{{test.name}}</h1>
+    </div>
+</div>
+
+[[webjar 'angular.min.js']]
+[[script 'test']]
